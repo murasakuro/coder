@@ -1,6 +1,9 @@
 from django.db import models
 
-class Dice(models.Model):
+class Product(models.Model):
+    price=models.IntegerField()
+
+class Die(models.Model):
     style=models.CharField(max_length=40)
     faces=models.IntegerField()
     numbering=models.CharField(max_length=40)
