@@ -1,8 +1,5 @@
 from django.db import models
 
-class Product(models.Model):
-    price=models.IntegerField()
-
 class Die(models.Model):
     style=models.CharField(max_length=60)
     faces=models.IntegerField()
