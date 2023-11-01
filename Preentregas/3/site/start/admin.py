@@ -1,3 +1,4 @@
 from django.contrib import admin
+from start.models import Die, DiceBag, Tray
 
-# Register your models here.
+admin.site.register([Die, DiceBag, Tray])
